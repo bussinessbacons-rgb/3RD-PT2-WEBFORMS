@@ -1,21 +1,32 @@
-﻿
 <html>
 <head>
 <title>Online Form - Survey</title>
 <style>
-body {text-align:center;}
+body {text-align: center;}
+table {margin: 0 auto; border-collapse: collapse; width: 600px;}
+td { padding: 8px; border: 1px solid #000;}
 </style>
 </head>
 
 <body>
-<h1>Survey Form</h1>
+<h1>Valorant Survey Form</h1>
 
 <form>
-Riot ID: <input type="text" required placeholder="Ex. Shelly"><br><br>
+<table>
 
-Riot Tag: <input type="text" required placeholder="Ex. #4690"><br><br>
+<tr>
+<td>Riot ID:</td>
+<td><input type="text" required placeholder="Ex. Shelly" size="25"></td>
+</tr>
 
-What Rank are you?:
+<tr>
+<td>Riot Tag:</td>
+<td><input type="text" required placeholder="Ex. #4690" size="25"></td>
+</tr>
+
+<tr>
+<td>What Rank are you?</td>
+<td>
 <select required>
 <option>Unranked</option>
 <option>Iron</option>
@@ -28,17 +39,24 @@ What Rank are you?:
 <option>Immortal</option>
 <option>Radiant</option>
 </select>
-<br> <br>
-How long have you been playing Valorant?:
+</td>
+</tr>
+
+<tr>
+<td>How long have you been playing Valorant?</td>
+<td>
 <select required>
 <option>Less than 1 month</option>
 <option>1–6 months</option>
 <option>6–12 months</option>
 <option>2+ years</option>
 </select>
-<br><br>
+</td>
+</tr>
 
-How many hours a week do you typically play Valorant?:
+<tr>
+<td>Hours you play weekly:</td>
+<td>
 <select required>
 <option>Less than 5</option>
 <option>5–10</option>
@@ -46,32 +64,48 @@ How many hours a week do you typically play Valorant?:
 <option>20–30</option>
 <option>30+</option>
 </select>
-<br><br>
+</td>
+</tr>
 
-What Role do you usually use?:
+<tr>
+<td>Role you usually use:</td>
+<td>
 <input type="radio" required> Duelist 
 <input type="radio" required> Initiator
-<input type="radio" required > Controller
-<input type="radio" required > Sentinel
-<br><br>
-Who is your main agent and why?: 
-<input type="text" required> <br> <br>
-What Agent is the most Annoying?:
-<input type="text" required>
-<br> <br>
+<input type="radio" required> Controller
+<input type="radio" required> Sentinel
+</td>
+</tr>
 
-On a scale of 1–10, how satisfied are you with the current game balance?:
-<input type="text" required>
-<br> <br>
+<tr>
+<td>Main agent and why?:</td>
+<td><input type="text" required placeholder="Ex. Clove" size="25"></td>
+</tr>
 
-What map do you enjoy playing the most?:
-<input type="text" required>
-<br> <br>
+<tr>
+<td>Most annoying agent:</td>
+<td><input type="text" required placeholder="Ex. Neon" size="25"></td>
+</tr>
 
-What map do you enjoy playing the least?:
-<input type="text" required>
-<br> <br>
+<tr>
+<td>Satisfaction (1–10):</td>
+<td><input type="text" required placeholder="Ex. 10" size="25"></td>
+</tr>
+
+<tr>
+<td>Favorite map:</td>
+<td><input type="text" required placeholder="Ex. Ascent" size="25"></td>
+</tr>
+
+<tr>
+<td>Least favorite map:</td>
+<td><input type="text" required placeholder="Ex. Breeze" size="25"></td>
+</tr>
+</table> <br> 
 <input type="submit" value="Submit">
+
+
+
 </form>
 
 </body>
